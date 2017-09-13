@@ -1,2 +1,2 @@
 # coursera-test
-Test Coursera Repo - Anjular
+Test Coursera Repo - Angular
