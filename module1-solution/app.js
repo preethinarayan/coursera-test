@@ -9,7 +9,6 @@ function LunchCheckController($scope){
 	$scope.displayMessage = "";
 	
 	$scope.checkLunchAndDisplayMessage = function(){
-		console.log("IN HERE");
 		var lunchItems = [];
 		console.log($scope.lunchMenuItems);
 		if($scope.lunchMenuItems && $scope.lunchMenuItems.length > 1){
@@ -20,7 +19,6 @@ function LunchCheckController($scope){
 				$scope.displayMessage = "Enjoy!";
 			}
 		} else {
-			console.log("in else");
 			$scope.displayMessage = "Please enter data first";
 		}
 	};
