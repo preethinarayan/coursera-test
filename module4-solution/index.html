@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app="MenuApp">
+  <head>
+    <title>Narrow Down Your Menu Choice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+<body>
+   <div class="container">
+    <h1>Welcome to our Restaurant</h1>
+
+<!--     <div class="form-group">
+      <ui-view></ui-view>
+    </div> -->
+
+    <ui-view></ui-view>
+    <loading-spinner></loading-spinner>
+
+  </div>
+  <!-- Libraries -->
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+
+  <!-- Modules -->
+  <script src="src/menuApp/data.module.js"></script>
+  <script src="src/menuApp/menuApp.module.js"></script>
+  <script src="src/spinner/spinner.module.js"></script>
+
+  <!-- Routes -->
+  <script src="src/routes.js"></script>
+
+  <!-- 'ShoppingList' module artifacts -->
+  <script src="src/menuApp/categories.component.js"></script>
+  <script src="src/menuApp/items.component.js"></script>
+  <script src="src/menuApp/categories.controller.js"></script>
+  <script src="src/menuApp/items.controller.js"></script>
+  <script src="src/menuApp/menuData.service.js"></script>
+
+  <!-- 'Spinner' module artifacts -->
+  <script src="src/spinner/loadingSpinner.component.js"></script>
+
+</body>
+</html>
