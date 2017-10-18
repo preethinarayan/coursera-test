@@ -1,0 +1,51 @@
+<div class="container">
+  <h2 id="my-info-title" class="text-center" ng-if="myInfo.user">
+    My Info
+  </h2>
+
+  <h2 id="my-info-title" class="text-center" ng-if="!myInfo.user">
+    Not signed up yet! Please sign up.
+  </h2>
+
+  <div ng-if="myInfo.user">
+
+  	<div class="form-group">
+    	<label for="firstname">First Name:</label>
+    	<label for="firstnameV">{{ myInfo.user.firstname }}</label>
+  	</div>
+
+  	<div class="form-group">
+    	<label for="lastname">Last Name:</label>
+    	<label for="lastnameV">{{ myInfo.user.lastname }}</label>
+  	</div>
+
+  	<div class="form-group">
+    	<label for="phone">Phone Number:</label>
+    	<label for="phoneV">{{ myInfo.user.phone }}</label>
+  	</div>
+
+  	<div class="form-group">
+    	<label for="email">Email:</label>
+    	<label for="emailV">{{ myInfo.user.email }}</label>
+  	</div>
+
+  	<div class="form-group">
+    	<label for="menu">Menu Preference:</label>
+    	<label for="menuName">{{ myInfo.menuitemDetails.name }}</label>
+  	</div>
+
+  	<div class="form-group">
+  		<label for="menuDesc">Menu Preference Description:</label>
+  		<label for="menuDesc">{{ myInfo.menuitemDetails.description }}</label>
+  	</div>
+
+  	<div class="form-group">
+  		 <div>
+        	<div>{{myInfo.menuitemDetails.short_name}}</div>
+        	<img class="img-responsive" width="250" height="150" ng-src="{{myInfo.basePath}}/images/{{myInfo.menuitemDetails.short_name}}.jpg" alt="{{myInfo.menuitemDetails.name}}">
+      	</div>
+  	</div>
+
+  </div>
+
+</div>
